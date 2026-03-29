@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <module name="spring-boot-alias-issue-demo.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.mezink.Main" />
+    <option name="VM_PARAMETERS" value="-Djavax.net.debug=ssl,handshake,keymanager" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.github.mezink.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

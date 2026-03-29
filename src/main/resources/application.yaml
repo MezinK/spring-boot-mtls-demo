@@ -1,0 +1,40 @@
+server:
+  ssl:
+    bundle: server
+    client-auth: need
+
+spring:
+  ssl:
+    bundle:
+      jks:
+        server:
+          keystore:
+            location: classpath:ssl/server.pfx
+            password: changeit
+            type: PKCS12
+          truststore:
+            location: classpath:ssl/server-truststore-${alias}.p12
+            password: changeit
+            type: PKCS12
+        certificate-a:
+          key:
+            alias: certificate-a
+          keystore:
+            location: classpath:ssl/shared.p12
+            password: changeit
+            type: PKCS12
+          truststore:
+            location: classpath:ssl/server.pfx
+            password: changeit
+            type: PKCS12
+        certificate-b:
+          key:
+            alias: certificate-b
+          keystore:
+            location: classpath:ssl/shared.p12
+            password: changeit
+            type: PKCS12
+          truststore:
+            location: classpath:ssl/server.pfx
+            password: changeit
+            type: PKCS12
